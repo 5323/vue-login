@@ -1,0 +1,71 @@
+.user-login,.user-register{
+	background-color:#fff;
+	padding-top:j(30);
+	@extend %f0;
+	@extend %tac;
+  height:100%;
+}
+.lp_tit{
+	font-size:j(36);
+	color:#666;
+	padding-bottom:j(25);
+}
+
+.lact_accountnumber,
+.lact_password,
+.register_account,.register_password{
+	margin-top:1px;
+	height:j(100);
+	font-size:j(32);
+	color:#666;
+	border:0;
+	border-bottom:1px solid #d7d7d7;
+	width:j(640);
+}
+
+.lact_login,.register_login{
+	@extend %dib;
+	@extend %tac;
+	width:j(640);
+	height:j(97);
+	margin:j(30) 0 j(30);
+	line-height:j(97);
+	background-color:#0bacff;
+	font-size:j(36);
+	color:#fff;
+	border-radius:j(10);
+}
+
+.lact_fj,.register_fj,.trial_fj{
+	width:j(640);
+	line-height:j(40);
+	height:j(40);
+	@extend %clearfix;
+  margin:j(10) auto 0;
+}
+
+.lact_forgetpassword{
+	@extend %fl;
+	font-size:j(28);
+	color:#999;
+	margin-left:j(30);
+}
+
+.lact_joinfast,.lact_logfast{
+	@extend %fr;
+	@extend %dib;
+	margin-right:j(30);
+	height:j(40);
+	line-height:j(40);
+	font-size:j(28);
+	color:#0bacff;
+}
+
+.lp_tips{
+  @extend %tac;
+  height:j(40);
+  line-height:j(40);
+  color:#f00;
+  font-size:j(28);
+  margin-bottom:j(20);
+}
