@@ -10,12 +10,12 @@
   	</div>
     <div class="user-register" v-show="showRegister">
   		<div class="lp_tit">玩蛋快速注册</div>
-  		<input class="register_account" type="text" placeholder="账号：4-15字符（仅限数字，英文）">
-  		<input class="register_password" type="password" placeholder="密码：6-20位密码">
-  		<input class="register_password" type="password" placeholder="确认密码">
-  		<span class="register_login">立即注册</span>
+  		<input class="register_account" type="text" placeholder="账号：4-15字符（仅限数字，英文）" v-model="newUsername" @focus="hideTips">
+  		<input class="register_password" type="password" placeholder="密码：6-20位密码" v-model="newPassword" @focus="hideTips">
+  		<input class="register_password" type="password" placeholder="确认密码" v-model="newrPassword" @focus="hideTips">
+  		<span class="register_login" @click="register">立即注册</span>
   		<div class="lact_fj"><a class="lact_logfast" v-on:click="gotoLogin">登录账号</a></div>
-      <div class="lp_tips"></div>
+      <div class="lp_tips"><span v-show="errorTips">{{ tipsText }}</span></div>
   	</div>
   </div>
 </template>
