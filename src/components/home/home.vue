@@ -4,8 +4,7 @@
       <span class="per_not_lingin"></span>
       <div class="per_usedata_box">
         <router-link :to="{ path: 'login' }" class="person_login">登录 注册</router-link>
-        <!-- <a class="person_login">登录</a> -->
-        <!-- <a class="person_sign">注册</a> -->
+        <!-- <a class="person_login">登录 注册</a> -->
       </div>
     </div>
     <a class="per_userdata" v-show="loginAfter">
@@ -36,6 +35,7 @@ export default {
     }
   },
   mounted () {
+    //钩子函数
     this.getUserData()
   },
   methods: {

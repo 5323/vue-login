@@ -52,6 +52,7 @@ const delCookie = function(c_name){
   setCookie(c_name, "", -1)
 }
 
+//export 可以导出常量、函数、文件、模块
 export { ajaxUrl,userType, rootWord, errorMsgShow, setCookie, getCookie, delCookie }
 
 // export default {

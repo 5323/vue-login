@@ -26,7 +26,4 @@
 <style lang="scss" scoped>
 @import '../../assets/css/define';
 @import './login';
-.test1{
-  font-size:12px;
-}
 </style>
