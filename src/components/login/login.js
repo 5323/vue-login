@@ -116,7 +116,6 @@ export default {
       this.$http.jsonp(ajaxUrl + 'api/account/register', {'params': datas}).then(res => {
         if(res.body.code == 200){
           this.showTips('注册成功')
-          return;
           // bus.$emit('userData-message', res.body.data) //传递数据
           let resData = res.body.data
           let queryData =  {
